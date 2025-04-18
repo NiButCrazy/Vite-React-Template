@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b30e468-ecca-4133-a860-28493d85d75e" name="更改" comment="改进后的模板，加入注释" />
+    <list default="true" id="2b30e468-ecca-4133-a860-28493d85d75e" name="更改" comment="修复了WebStorm的React插件类型检查误报错误的问题">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/__comment__/-2/index.tree.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/public/__comment__/-2/index.tree.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/resource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/resource.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.app.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,19 +52,26 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/MyCode/vite-react-ts-template",
+    "last_opened_file_path": "E:/MyCode/vite-react-ts-template/public/__comment__/-3",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "io.github.linwancen.plugin.show.settings.AppSettingsConfigurable",
-    "ts.external.directory.path": "E:\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "npm.React 项目.executor": "Run",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "ts.external.directory.path": "E:\\MyCode\\vite-react-ts-template\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\MyCode\vite-react-ts-template\public\__comment__\-3" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\MyCode\vite-react-ts-template\public\__comment__" />
       <recent name="E:\MyCode\vite-react-ts-template\public\comment\-2" />
       <recent name="E:\MyCode\vite-react-ts-template\public" />
     </key>
@@ -77,6 +94,33 @@
       <workItem from="1744808351895" duration="2624000" />
       <workItem from="1744894028097" duration="108000" />
       <workItem from="1744895811988" duration="1270000" />
+      <workItem from="1744899359194" duration="34000" />
+      <workItem from="1744901621611" duration="119000" />
+      <workItem from="1744901888160" duration="467000" />
+      <workItem from="1744963643861" duration="211000" />
+      <workItem from="1744963863456" duration="4918000" />
+      <workItem from="1744968805965" duration="83000" />
+      <workItem from="1744968898467" duration="51000" />
+      <workItem from="1744968962025" duration="254000" />
+      <workItem from="1744969226132" duration="165000" />
+      <workItem from="1744969400378" duration="190000" />
+      <workItem from="1744969599494" duration="23000" />
+      <workItem from="1744969631327" duration="3164000" />
+      <workItem from="1744973730118" duration="15000" />
+      <workItem from="1744973754210" duration="118000" />
+      <workItem from="1744973914989" duration="1339000" />
+      <workItem from="1744975273290" duration="16000" />
+      <workItem from="1744975305034" duration="8000" />
+      <workItem from="1744975321788" duration="12000" />
+      <workItem from="1744975365986" duration="77000" />
+      <workItem from="1744975516330" duration="15000" />
+      <workItem from="1744975580780" duration="72000" />
+      <workItem from="1744975780116" duration="43000" />
+      <workItem from="1744975886920" duration="31000" />
+      <workItem from="1744976195032" duration="262000" />
+      <workItem from="1744977127843" duration="367000" />
+      <workItem from="1744977537127" duration="1796000" />
+      <workItem from="1744979349850" duration="7127000" />
     </task>
     <task id="LOCAL-00001" summary="最初版本的模板">
       <option name="closed" value="true" />
@@ -94,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744896788676</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修复了WebStorm的React插件类型检查误报错误的问题">
+      <option name="closed" value="true" />
+      <created>1744901729287</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744901729287</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +178,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="改进后的模板，加入注释" />
     <MESSAGE value="改进后的模板，加入注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="改进后的模板，加入注释" />
+    <MESSAGE value="修复了WebStorm的React插件类型检查误报错误的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了WebStorm的React插件类型检查误报错误的问题" />
   </component>
 </project>

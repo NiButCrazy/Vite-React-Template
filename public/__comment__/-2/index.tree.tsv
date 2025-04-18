@@ -5,7 +5,7 @@ src	源代码目录
 public	公共资源根
 index.html	项目入口视图
 package.json	项目包管理
-README.md	🔖 项目简介
+README.md	🔖 自述文件
 vite.config.ts	Vite 插件配置
 assets	静态资源目录
 components	组件库
@@ -16,3 +16,4 @@ App.tsx	App 根组件
 main.tsx	项目逻辑入口
 vite-env.d.ts	Vite 路径配置
 resource.ts	资源管理模块
+tsconfig.app.json	类型检查配置

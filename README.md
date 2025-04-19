@@ -1,7 +1,6 @@
 # Vite + React + TypeScript + Tailwind 创建模板
 
 [流程图](./public/__comment__/Project.mermaid)
-
 ```mermaid
 flowchart TB
 
@@ -11,7 +10,7 @@ flowchart TB
 
     subgraph 组件库
         subgraph Button组件文件结构
-            Button.module.css --样式表-->Button.tsx[Button.tsx] --导出至--> index.ts[index.ts\n暴露构造函数]
+            Button.module.css --样式表-->Button.tsx[Button.tsx] --导出至--> index.ts[index.ts<br>暴露构造函数]
         end
 
         Button.tsx -.-> Button
@@ -22,6 +21,6 @@ flowchart TB
     App.tsx -.-> App
     App.tsx --被引用--> main.tsx
     main.tsx -.创建并渲染App组件.-> root
-    resource.ts\n资源管理模块 --提供所需资源路径--> App.tsx
-    root --唯一根节点--> index.html\n项目入口视图
+    resource.ts[resource.ts<br>资源管理模块] --提供所需资源路径--> App.tsx
+    root --唯一根节点--> index.html[index.html<br>项目入口视图]
 ```

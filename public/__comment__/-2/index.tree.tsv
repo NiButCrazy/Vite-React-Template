@@ -17,3 +17,4 @@ main.tsx	项目逻辑入口
 vite-env.d.ts	Vite 路径配置
 resource.ts	资源管理模块
 tsconfig.app.json	类型检查配置
+router.tsx	路由管理模块

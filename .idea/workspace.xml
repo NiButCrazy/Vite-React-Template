@@ -5,13 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b30e468-ecca-4133-a860-28493d85d75e" name="更改" comment="大改进，去除ESLint，引入TS语言服务，完全禁用WebStorm自带的类型检查">
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/__comment__/-2/index.tree.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/public/__comment__/-2/index.tree.tsv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/__comment__/Project.mermaid" beforeDir="false" afterPath="$PROJECT_DIR$/public/__comment__/Project.mermaid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/resource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/resource.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,7 +73,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "npm.React 项目.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
     "ts.external.directory.path": "E:\\MyCode\\vite-react-ts-template\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -130,6 +148,18 @@
       <workItem from="1745039834306" duration="46000" />
       <workItem from="1745039889035" duration="648000" />
       <workItem from="1745041336937" duration="348000" />
+      <workItem from="1745041749284" duration="101000" />
+      <workItem from="1745042068501" duration="222000" />
+      <workItem from="1745042305321" duration="139000" />
+      <workItem from="1745042464797" duration="116000" />
+      <workItem from="1745134166133" duration="3877000" />
+      <workItem from="1745148843544" duration="165000" />
+      <workItem from="1745149016733" duration="25000" />
+      <workItem from="1745149049864" duration="315000" />
+      <workItem from="1745149382351" duration="1591000" />
+      <workItem from="1745153763475" duration="1085000" />
+      <workItem from="1745159477487" duration="20000" />
+      <workItem from="1745159503274" duration="3357000" />
     </task>
     <task id="LOCAL-00001" summary="最初版本的模板">
       <option name="closed" value="true" />

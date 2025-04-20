@@ -3,6 +3,6 @@ import viteLogo from  '/vite.svg'
 
 
 export default {
-    reactLogo,
-    viteLogo,
+  reactLogo,
+  viteLogo,
 }

@@ -10,8 +10,9 @@
 flowchart TB
 
     subgraph 组件对象
-        Button[Button] --渲染按钮--> App[App]
+        Button[Button] --渲染按钮--> Home[Home] --路由子组件页面--> App[App]
     end
+    Home.tsx -.-> Home
     App[App] --路由管理--> router-obj[路由管理器] --挂载至--> root[root<br>Dom对象]
     subgraph 组件库
         subgraph Button组件文件结构

@@ -2,7 +2,7 @@
   "name": "react-test",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "author": "Ni But Crazy",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

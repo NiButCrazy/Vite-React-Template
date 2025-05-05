@@ -1,6 +1,7 @@
 {
   "name": "react-test",
   "private": true,
+  "type": "module",
   "version": "0.0.0",
   "author": "Ni But Crazy",
   "scripts": {

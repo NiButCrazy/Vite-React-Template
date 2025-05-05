@@ -5,7 +5,7 @@
 - React Router - 路由管理
 - Zustand - 状态管理
 
-[流程图](./public/__comment__/Project.mermaid)
+[流程图](./.idea/__comment__/Project.mermaid)
 ```mermaid
 flowchart TB
 

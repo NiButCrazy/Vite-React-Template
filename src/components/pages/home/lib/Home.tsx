@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <h1>Vite + React</h1>
         <div className={ s_.card }>
-          <Button/>
+          <Button />
           <p>
             编辑 <code>src/main.tsx</code> 并保存以热更新
           </p>

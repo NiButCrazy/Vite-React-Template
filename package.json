@@ -1,17 +1,16 @@
 {
   "name": "react-test",
   "private": true,
+  "description": "a react-vite template",
   "type": "module",
   "version": "0.0.0",
   "author": "Ni But Crazy",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.5.1",
@@ -19,11 +18,13 @@
     "zustand": "^5.0.3"
   },
   "devDependencies": {
+    "@types/node": "^24.0.6",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.0",
+    "@tailwindcss/vite": "^4.1.4",
     "globals": "^16.0.0",
-    "typescript": "~5.7.2",
-    "vite": "^6.3.1"
+    "typescript": "^5.8.3",
+    "vite": "^6.3.4"
   }
 }

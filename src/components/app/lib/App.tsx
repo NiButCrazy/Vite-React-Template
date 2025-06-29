@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
 import '../styles/index.css'
-import '../styles/App.module.css'
+import '../styles/App.module.less'
 
 
 function App() {

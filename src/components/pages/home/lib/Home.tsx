@@ -1,5 +1,5 @@
 import Button from "@components/button";
-import s_ from '../styles/Home.module.css'
+import s_ from '../styles/Home.module.less'
 import viteLogo from '../assets/vite.svg'
 import reactLogo from '../assets/react.svg'
 

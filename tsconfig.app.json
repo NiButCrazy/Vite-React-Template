@@ -37,5 +37,5 @@
 
   },
   "include": ["src"],
-  "exclude": ["src/assets/*"]
+  "exclude": ["**/assets/*", "public"]
 }

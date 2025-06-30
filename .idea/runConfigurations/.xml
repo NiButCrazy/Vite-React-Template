@@ -9,7 +9,7 @@
     <package-manager value="yarn" />
     <envs />
     <EXTENSION ID="com.intellij.lang.javascript.buildTools.npm.rc.StartBrowserRunConfigurationExtension">
-      <browser start="true" url="http://localhost:5173/" />
+      <browser url="http://localhost:5173/" />
     </EXTENSION>
     <method v="2" />
   </configuration>

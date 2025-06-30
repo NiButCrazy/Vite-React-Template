@@ -23,7 +23,6 @@ flowchart LR
                 end
                 subgraph styles3[styles 样式]
                     ...6[...]
-                    index.css[index.css 全局样式]
                 end
                 assets3 --> lib3
                 styles3 --样式表-->lib3[Button.tsx] --导出至--> index3.ts[index.ts<br>...]
@@ -47,6 +46,7 @@ flowchart LR
                     styles1 --样式表-->lib1 --导出至--> index2.ts
                 end
             end
+            index.css[index.css 全局样式]
         end
         subgraph utils 工具模块
             router.tsx[router.tsx 路由管理模块]

@@ -16,6 +16,9 @@
       ],
       "@utils/*": [
         "./src/utils/*"
+      ],
+      "@global/*": [
+        "./src/global/*"
       ]
     },
 

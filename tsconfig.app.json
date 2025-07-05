@@ -19,6 +19,9 @@
       ],
       "@global/*": [
         "./src/global/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
       ]
     },
 

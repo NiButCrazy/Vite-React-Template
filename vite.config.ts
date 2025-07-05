@@ -18,7 +18,8 @@ export default defineConfig({
       '@renderer': resolve(__dirname, './src'),
       '@components': resolve(__dirname, './src/components'),
       '@utils': resolve(__dirname, './src/utils'),
-      '@global': resolve(__dirname, './src/global')
+      '@global': resolve(__dirname, './src/global'),
+      '@hooks': resolve(__dirname, './src/global')
     }
   }
 })

@@ -11,6 +11,9 @@
     "preview": "vite preview",
     "version": "nbc-auto-changelog -p && git add CHANGELOG.md"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  },
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

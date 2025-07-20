@@ -24,12 +24,10 @@
         "./src/hooks/*"
       ]
     },
-
     /* Bundler mode */
     "moduleResolution": "bundler",
     "noEmit": true,
     "jsx": "react-jsx",
-
     /* Linting */
     "strict": true,
     "noUnusedLocals": false,
@@ -37,7 +35,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "allowImportingTsExtensions": true
-
   },
   "include": ["src"],
   "exclude": ["**/assets/*", "public"]

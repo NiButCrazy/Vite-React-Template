@@ -1,11 +1,23 @@
 # Vite + React + TypeScript 创建模板
 
+个人自用
+
+## 安装使用
+
+```shell
+npm create nbc-app < projectName| 可选 >
+```
+
+> 当然也可以直接克隆项目
+
 ### 第三方库
+
 - React Router - 路由管理
 - Zustand - 状态管理
 - Less - 样式预处理
 
 [流程图](./.idea/__comment__/Project.mermaid)
+
 ```mermaid
 flowchart LR
     subgraph src 源代码目录

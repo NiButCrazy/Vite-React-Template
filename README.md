@@ -5,10 +5,13 @@
 ## 安装使用
 
 ```shell
-npm create nbc-app < projectName| 可选 >
+npm create nbc-app < projectName | 可选 >
+# yarn create nbc-app < projectName | 可选 >
+# pnpm create nbc-app < projectName | 可选 >
 ```
 
-> 当然也可以直接克隆项目
+> 当然也可以直接克隆项目  
+> 感兴趣的还可以查看个人 [汉化版 React DevTools](https://github.com/NiButCrazy/react-devtools-extension-chinese)
 
 ### 第三方库
 
@@ -33,7 +36,7 @@ flowchart LR
                     ...3[...]
                 end
                 assets2 --> lib2
-                styles2 --样式表-->lib2[Button.tsx] --导出至--> index1.ts[index.ts<br>...]
+                styles2 -- 样式表 --> lib2[Button.tsx] -- 导出至 --> index1.ts[index.ts<br>...]
             end
             subgraph app / App 组件
                 subgraph assets3[assets 资源]
@@ -46,7 +49,7 @@ flowchart LR
                     ...6[...]
                 end
                 assets3 --> lib3
-                styles3 --样式表-->lib3[Button.tsx] --导出至--> index3.ts[index.ts<br>...]
+                styles3 -- 样式表 --> lib3[Button.tsx] -- 导出至 --> index3.ts[index.ts<br>...]
             end
             subgraph pages 业务界面组件库
                 subgraph Home 组件
@@ -62,21 +65,21 @@ flowchart LR
                         Home.module.less
                     end
                     index2.ts[index.ts<br>整合导出内容]
-                    assets1--图标-->lib1
-                    styles1 --样式表-->lib1 --导出至--> index2.ts
+                    assets1 -- 图标 --> lib1
+                    styles1 -- 样式表 --> lib1 -- 导出至 --> index2.ts
                 end
             end
         end
         subgraph utils 工具模块
             router.tsx[router.tsx 路由管理模块]
         end
-        components --组件挂载--> router.tsx
+        components -- 组件挂载 --> router.tsx
         main.tsx[main.tsx 逻辑入口]
-        router.tsx --路由挂载--> main.tsx
+        router.tsx -- 路由挂载 --> main.tsx
         subgraph global[global 全局访问入口]
             index.css[index.css 全局样式]
         end
-        global --全局属性挂载--> main.tsx
+        global -- 全局属性挂载 --> main.tsx
     end
     subgraph public[public 公共资源根]
         subgraph images
@@ -84,5 +87,5 @@ flowchart LR
         end
     end
     index.html[index.html 页面入口]
-    public --静态资源--> index.html
+    public -- 静态资源 --> index.html
 ```

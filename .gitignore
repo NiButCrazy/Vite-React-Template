@@ -23,5 +23,5 @@ dist-ssr
 *.sw?
 yarn.lock
 desktop.ini
-.idea/vsc.xml
+.idea/vcs.xml
 .idea/workspace.xml

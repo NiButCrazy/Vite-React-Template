@@ -8,21 +8,11 @@
     "skipLibCheck": true,
     /* 路径别名 */
     "paths": {
-      "@renderer/*": [
-        "./src/*"
-      ],
-      "@components/*": [
-        "./src/components/*"
-      ],
-      "@utils/*": [
-        "./src/utils/*"
-      ],
-      "@global/*": [
-        "./src/global/*"
-      ],
-      "@hooks/*": [
-        "./src/hooks/*"
-      ]
+      "@renderer/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@global/*": ["./src/global/*"],
+      "@hooks/*": ["./src/hooks/*"]
     },
     /* Bundler mode */
     "moduleResolution": "bundler",

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router'
 import App from '@components/app'
-import Home from '@components/pages/home'
+import { Home } from '@components/pages'
 
 
 const router = createBrowserRouter([
@@ -10,7 +10,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, Component: Home }
     ]
-  },
+  }
 ])
 
 export default router

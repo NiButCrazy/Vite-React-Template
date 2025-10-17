@@ -1,1 +1,3 @@
-export { default } from './lib/App.tsx'
+export { default } from './App.tsx'
+
+

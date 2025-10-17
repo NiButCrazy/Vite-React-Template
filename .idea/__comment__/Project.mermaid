@@ -6,26 +6,28 @@ flowchart LR
                     ...1[...]
                 end
                 subgraph lib2[lib 代码]
-                    Button.tsx
+                    ...2[...]
                 end
                 subgraph styles2[styles 样式]
                     ...3[...]
                 end
-                assets2 --> lib2
-                styles2 --样式表-->lib2[Button.tsx] --导出至--> index1.ts[index.ts<br>...]
+                lib2 --代码库-->Button.tsx
+                assets2 --> Button.tsx
+                styles2 --样式表-->Button.tsx --导出至--> index1.ts[index.ts<br>...]
             end
             subgraph app / App 组件
                 subgraph assets3[assets 资源]
                     ...4[...]
                 end
                 subgraph lib3[lib 代码]
-                    App.tsx
+                    ...5[...]
                 end
                 subgraph styles3[styles 样式]
                     ...6[...]
                 end
+                lib3 --代码库-->App.tsx
                 assets3 --> lib3
-                styles3 --样式表-->lib3[Button.tsx] --导出至--> index3.ts[index.ts<br>...]
+                styles3 --样式表-->App.tsx --导出至--> index3.ts[index.ts<br>...]
             end
             subgraph pages 业务界面组件库
                 subgraph Home 组件
@@ -35,14 +37,15 @@ flowchart LR
                         end
                     end
                     subgraph lib1[lib 代码]
-                        Home.tsx[Home.tsx]
+                        工具类代码库
                     end
                     subgraph styles1[styles 样式]
                         Home.module.less
                     end
                     index2.ts[index.ts<br>整合导出内容]
-                    assets1--图标-->lib1
-                    styles1 --样式表-->lib1 --导出至--> index2.ts
+                    lib1 --代码库-->Home.tsx
+                    assets1--图标-->Home.tsx
+                    styles1 --样式表-->Home.tsx --导出至--> index2.ts
                 end
             end
         end
@@ -58,7 +61,7 @@ flowchart LR
         global --全局属性挂载--> main.tsx
     end
     subgraph public[public 公共资源根]
-        subgraph images 
+        subgraph images
             vitelogo[vite.svg]
         end
     end

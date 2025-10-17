@@ -21,7 +21,7 @@ router.tsx	路由管理模块
 config.ts	配置管理模块
 tsconfig.json	TS 配置文件入口
 tsconfig.node.json	Node 配置
-Buttons	按钮类组件
+buttons	按钮类组件
 .idea	IDE 配置目录
 .out	构建输出目录
 audios	音频
@@ -46,3 +46,4 @@ styles.global.less	全局样式
 index.ts	模块入口
 global	全局访问入口
 routers	路由管理
+pnpm-lock.yaml	Pnpm 锁文件

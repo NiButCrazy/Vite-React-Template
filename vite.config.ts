@@ -1,11 +1,17 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
-import react from '@vitejs/plugin-react'
+import react, { reactCompilerPreset } from '@vitejs/plugin-react'
+import UnoCSS from 'unocss/vite'
+import babel from '@rolldown/plugin-babel'
 
 // https://cn.vitejs.dev/config
 export default defineConfig({
   plugins: [
-    react()
+    UnoCSS(),
+    react(),
+    babel({
+      presets: [ reactCompilerPreset() ]
+    })
   ],
   css: {
     devSourcemap: true,
@@ -20,7 +26,7 @@ export default defineConfig({
       '@renderer': resolve(__dirname, './src'),
       '@components': resolve(__dirname, './src/components'),
       '@utils': resolve(__dirname, './src/utils'),
-      '@global': resolve(__dirname, './src/global'),
+      '@shared': resolve(__dirname, './src/shared'),
       '@hooks': resolve(__dirname, './src/global')
     }
   }

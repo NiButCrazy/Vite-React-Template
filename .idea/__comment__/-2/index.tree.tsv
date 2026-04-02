@@ -1,14 +1,14 @@
-index.tree.tsv	📝 树状视图注释
+index.tree.tsv	树状视图注释
 __comment__	注释文件根
 src	源代码目录
 static	静态资源目录
 dist	打包输出目录
 build	打包资源目录
-.gitignore	🔕 Git 忽略文件配置
+.gitignore	Git 忽略文件配置
 public	公共资源根
 index.html	项目入口视图
 package.json	项目包管理
-README.md	🔖 自述文件
+README.md	自述文件
 vite.config.ts	Vite 插件配置
 assets	组件资源目录
 components	组件库

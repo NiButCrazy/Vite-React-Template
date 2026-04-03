@@ -2,9 +2,9 @@ import { ComponentProps, useState } from 'react'
 import { clsx } from 'clsx'
 
 
-function Button(props: ComponentProps<'div'>) {
+function Button(props: ComponentProps<'button'>) {
   const [ count, setCount ] = useState(0)
-  const { children } = props
+  const { children, ...prop } = props
 
   function handleClick(e: EventFor<'button', 'onClick'>) {
     setCount(count + 1)
@@ -19,7 +19,7 @@ function Button(props: ComponentProps<'div'>) {
         'hover:border-color1',
         'focus-visible:outline1 outline-offset-2'
       )
-    } onClick={ handleClick }>
+    } onClick={ handleClick } { ...prop } >
       { children ?? `计数器为 ${ count }` }
     </button>
   )

@@ -40,4 +40,4 @@ npm create nbc-app < projectName | 可选 >
 - React Compiler - React 性能编译器
 - Eslint - React Hooks 与 Refresh 静态代码检查
 
-[流程图](./.idea/__comment__/Project.mermaid)
+![示例图](./public/snap/img.png)

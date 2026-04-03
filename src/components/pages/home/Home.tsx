@@ -1,6 +1,9 @@
 import viteLogo from './assets/images/vite.svg'
 import reactLogo from './assets/images/react.svg'
 import heroImg from './assets/images/hero.png'
+import unocssLogo from './assets/images/unocss.svg'
+import routerImg from './assets/images/router.png'
+import zustandImg from './assets/images/zustand.ico'
 import { Button } from '@components/buttons'
 
 
@@ -42,7 +45,25 @@ export default function Home() {
             <li>
               <a href="https://zh-hans.react.dev/" target="_blank">
                 <img className="button-icon" src={ reactLogo } alt="" />
-                学习更多
+                学习 React
+              </a>
+            </li>
+            <li>
+              <a href="https://unocss.nodejs.cn" target="_blank">
+                <img className="button-icon" src={ unocssLogo } alt="" />
+                了解 UnoCSS
+              </a>
+            </li>
+            <li>
+              <a href="https://reactrouter.remix.org.cn/home" target="_blank">
+                <img className="button-icon" src={ routerImg } alt="" />
+                React Router
+              </a>
+            </li>
+            <li>
+              <a href="https://ouweiya.github.io/zustand-zh" target="_blank">
+                <img className="button-icon" src={ zustandImg } alt="" />
+                Zustand
               </a>
             </li>
           </ul>

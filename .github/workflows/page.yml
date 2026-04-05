@@ -35,7 +35,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm run build --base ${{ REPOSITORY_NAME }}
+        run: npm run build --base '/${{ env.REPOSITORY_NAME }}/'
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact

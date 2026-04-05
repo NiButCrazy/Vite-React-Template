@@ -4,9 +4,12 @@ import { clsx } from 'clsx'
 
 // 切换主题
 function switchTheme(isDark: boolean) {
+  // .light 类名是为了防止默认过渡被覆盖，进而导致样式冲突，吞掉动画
   if (isDark) {
     document.documentElement.classList.add('dark')
+    document.documentElement.classList.remove('light')
   } else {
+    document.documentElement.classList.add('light')
     document.documentElement.classList.remove('dark')
   }
 }

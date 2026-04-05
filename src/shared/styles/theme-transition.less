@@ -3,12 +3,19 @@
   animation-fill-mode: both;
 }
 
-::view-transition-new(root) {
-  animation-name: reveal-dark;
+
+// .light 类名是为了防止默认过渡被覆盖，进而导致样式冲突，吞掉动画
+.light::view-transition-new(root) {
+  animation: none;
+  animation-fill-mode: both;
 }
 
+.light::view-transition-old(root) {
+  animation-name: reveal-dark;
+  animation-direction: reverse;
+  z-index: 1;
+}
 
-::view-transition-old(root),
 .dark::view-transition-old(root) {
   animation: none;
   animation-fill-mode: both;
@@ -22,7 +29,7 @@
 
 @keyframes reveal-dark {
   from {
-    clip-path: circle(20px at top 55px right 55px);
+    clip-path: circle(20px at top 52px right 67px);
   }
   to {
     clip-path: circle(100%);

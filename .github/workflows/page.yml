@@ -1,4 +1,4 @@
-# 将静态内容部署到 GitHub Pages 的简易工作流程
+# 部署静态网站
 name: Deploy static content to Pages
 
 on:
@@ -28,12 +28,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: get repository name
+        run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm run build
+        run: npm run build --base ${{ REPOSITORY_NAME }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact

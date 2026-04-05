@@ -47,3 +47,10 @@ index.ts	模块入口
 global	全局访问入口
 routers	路由管理
 pnpm-lock.yaml	项目依赖锁
+constants	共享常量
+stores	存储管理
+shared	全局共享
+types	类型声明
+theme	主题管理组件
+eslint.config.js	静态检查配置
+uno.config.ts	原子样式配置

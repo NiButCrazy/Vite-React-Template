@@ -31,13 +31,16 @@ npm create nbc-app < projectName | 可选 >
 
 ### 第三方库
 
-- React Router - 路由管理
-- Zustand - 全局状态管理
-- Less - 样式预处理
-- UnoCSS - 原子化 CSS
-- @unocss/reset - 统一浏览器之间的原生样式
-- clsx - className 工具
-- React Compiler - React 性能编译器
-- Eslint - React Hooks 与 Refresh 静态代码检查
+- #### 生产
+    - React Router - 路由管理
+    - Zustand - 全局状态管理
+    - Immer - 处理状态结构
+    - @unocss/reset - 统一浏览器之间的原生样式
+    - clsx - 样式类名管理工具
+- #### 开发
+    - Less - 样式预处理
+    - UnoCSS - 原子化 CSS
+    - React Compiler - React 性能编译器
+    - Eslint - React Hooks 与 Refresh 静态代码检查
 
 ![示例图](./public/snap/img.png)

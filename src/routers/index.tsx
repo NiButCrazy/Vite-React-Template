@@ -1,6 +1,5 @@
 import { createBrowserRouter } from 'react-router'
-import App from '@components/app'
-import { Home } from '@components/pages'
+import { App, Home } from '@renderer/pages'
 
 
 const router = createBrowserRouter([

@@ -1,0 +1,30 @@
+::view-transition-group(root) {
+  animation-duration: .7s;
+  animation-fill-mode: both;
+}
+
+::view-transition-new(root) {
+  animation-name: reveal-dark;
+}
+
+
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+  animation: none;
+  animation-fill-mode: both;
+  z-index: -1;
+}
+
+.dark::view-transition-new(root) {
+  animation-name: reveal-dark;
+}
+
+
+@keyframes reveal-dark {
+  from {
+    clip-path: circle(20px at top 55px right 55px);
+  }
+  to {
+    clip-path: circle(100%);
+  }
+}

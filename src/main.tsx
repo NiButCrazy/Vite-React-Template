@@ -5,7 +5,7 @@ import '@shared/styles/global.less'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { RouterProvider } from 'react-router'
-import router from '@renderer/routers'
+import router from '@renderer/routes/router'
 
 
 createRoot(document.getElementById('root')!).render(

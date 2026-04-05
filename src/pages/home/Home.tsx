@@ -5,6 +5,7 @@ import unocssLogo from './assets/images/unocss.svg'
 import routerImg from './assets/images/router.png'
 import zustandImg from './assets/images/zustand.ico'
 import immerImg from './assets/images/immer.ico'
+import Icons from './assets/images/icons.svg'
 import { Button } from '@components/buttons'
 
 
@@ -32,7 +33,7 @@ export default function Home() {
       <section id="next-steps">
         <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
+            <use href={ Icons + '#documentation-icon' }></use>
           </svg>
           <h2>魔法手册</h2>
           <p>问出好奇，收获惊喜</p>
@@ -77,7 +78,7 @@ export default function Home() {
         </div>
         <div id="social">
           <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
+            <use href={ Icons + '#social-icon' }></use>
           </svg>
           <h2>想法连线中</h2>
           <p>加入 Vite 社区</p>
@@ -89,7 +90,7 @@ export default function Home() {
                   role="presentation"
                   aria-hidden="true"
                 >
-                  <use href="/icons.svg#github-icon"></use>
+                  <use href={ Icons + '#github-icon' }></use>
                 </svg>
                 GitHub
               </a>
@@ -101,7 +102,7 @@ export default function Home() {
                   role="presentation"
                   aria-hidden="true"
                 >
-                  <use href="/icons.svg#discord-icon"></use>
+                  <use href={ Icons + '#discord-icon' }></use>
                 </svg>
                 Discord
               </a>
@@ -113,7 +114,7 @@ export default function Home() {
                   role="presentation"
                   aria-hidden="true"
                 >
-                  <use href="/icons.svg#x-icon"></use>
+                  <use href={ Icons + '#x-icon' }></use>
                 </svg>
                 X.com
               </a>
@@ -125,7 +126,7 @@ export default function Home() {
                   role="presentation"
                   aria-hidden="true"
                 >
-                  <use href="/icons.svg#bluesky-icon"></use>
+                  <use href={ Icons + '#bluesky-icon' }></use>
                 </svg>
                 Bluesky
               </a>

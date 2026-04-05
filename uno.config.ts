@@ -1,4 +1,4 @@
-import { defineConfig } from 'unocss'
+import { defineConfig, presetMini } from 'unocss'
 import { clsx } from 'clsx'
 
 
@@ -17,5 +17,10 @@ export default defineConfig({
     [ 'bg-color1', { background: 'var(--accent-bg)' } ],
     [ 'border-color1', { 'border-color': 'var(--accent-border)' } ],
     [ 'outline1', { outline: '2px solid var(--accent)' } ],
-  ]
+  ],
+  presets: [
+    presetMini({
+      preflight: 'on-demand',
+    }),
+  ],
 })

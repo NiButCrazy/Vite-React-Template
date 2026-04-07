@@ -1,5 +1,5 @@
 # 部署静态网站
-name: Deploy static content to Pages
+name: 生产构建部署至 GitHub Pages
 
 on:
   # 仅在推送到默认分支时运行。
@@ -28,25 +28,25 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: get repository name
+      - name: 获取仓库名称并写入环境变量
         run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
-      - name: Checkout
+      - name: 检出代码
         uses: actions/checkout@v4
-      - name: Set up Node
+      - name: 设置 Node 版本
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
-      - name: Install dependencies
+      - name: 下载依赖
         run: npm install
-      - name: Build
+      - name: 构建生产版本
         run: npm run build -- --base '/${{ env.REPOSITORY_NAME }}/'
-      - name: Setup Pages
+      - name: 配置页面
         uses: actions/configure-pages@v4
-      - name: Upload artifact
+      - name: 上传静态资产
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist folder
+          # 上传打包后的文件夹
           path: './dist'
-      - name: Deploy to GitHub Pages
+      - name: 部署 GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

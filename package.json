@@ -9,7 +9,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "version": "nbc-auto-changelog -p && git add CHANGELOG.md"
+    "version": "git cliff && git add CHANGELOG.md"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

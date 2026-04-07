@@ -1,0 +1,39 @@
+# 构建发行版
+name: 发行版
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write  # 必须有写权限才能创建 release
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 创建更新日志
+        uses: orhun/git-cliff-action@v4
+        with:
+          args: --latest --config-url https://raw.githubusercontent.com/NiButCrazy/nbc-auto-changelog/master/cliff.toml
+        env:
+          OUTPUT: CHANGELOG_NEW.md
+          GITHUB_REPO: ${{ github.repository }}
+
+      - name: 添加更新日志至发布说明
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.release.tag_name }}
+          body_path: CHANGELOG_NEW.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+

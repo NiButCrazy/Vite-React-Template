@@ -1,5 +1,5 @@
 import { useGlobalStore } from '@shared/stores/useGlobalStore'
-import { ComponentProps, useEffect } from 'react'
+import { ComponentProps, useEffect, useEffectEvent } from 'react'
 import { clsx } from 'clsx'
 
 // 切换主题
@@ -18,23 +18,20 @@ export function ThemeManager(props: ComponentProps<'button'>) {
   const isDark = useGlobalStore(state => state.isDark)
   const setDark = useGlobalStore(state => state.setDark)
 
-  function handleClick() {
-    document.startViewTransition(() => {
-      setDark(!isDark)
-    })
-  }
+  function handleClick() {document.startViewTransition(() => {setDark(!isDark)})}
+
+  const handleThemeChange = useEffectEvent((e: MediaQueryListEvent) => {
+    setDark(e.matches)
+  })
 
   // 主题监听器只在挂载时创建
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)')
-    const handleChange = (e: MediaQueryListEvent) => {
-      setDark(e.matches)
-    }
-    media.addEventListener('change', handleChange)
+    media.addEventListener('change', handleThemeChange)
     return () => {
-      media.removeEventListener('change', handleChange)
+      media.removeEventListener('change', handleThemeChange)
     }
-  }, [ setDark ])
+  }, [])
 
   // 每次 isDark 状态更新时触发主题切换
   useEffect(() => {

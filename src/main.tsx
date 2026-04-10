@@ -1,6 +1,6 @@
 import '@unocss/reset/normalize.css'
-import 'virtual:uno.css'
 import '@shared/styles/global.less'
+import 'virtual:uno.css'
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'

@@ -1,17 +1,8 @@
-import { defineConfig, presetMini } from 'unocss'
-import { clsx } from 'clsx'
+import { defineConfig, presetMini, transformerDirectives } from 'unocss'
 
 
 export default defineConfig({
   // ...UnoCSS 设置
-  shortcuts: {
-    'button1': clsx('text-16px p-x-10px p-y-5px border-rd-5px',
-      'color1 bg-color1 border-2px border-transparent border-solid',
-      'transition-colors-300 m-b-24px',
-      'hover:border-color1',
-      'focus-visible:outline1 outline-offset-2'
-    ),
-  },
   rules: [
     [ 'color1', { color: 'var(--accent)' } ],
     [ 'bg-color1', { background: 'var(--accent-bg)' } ],
@@ -23,4 +14,7 @@ export default defineConfig({
       preflight: 'on-demand',
     }),
   ],
+  transformers: [
+    transformerDirectives()
+  ]
 })

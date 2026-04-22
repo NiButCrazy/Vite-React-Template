@@ -30,23 +30,31 @@ jobs:
     steps:
       - name: 获取仓库名称并写入环境变量
         run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
+        
       - name: 检出代码
         uses: actions/checkout@v4
-      - name: 设置 Node 版本
-        uses: actions/setup-node@v6
+
+      - name: 安装 pnpm
+        uses: pnpm/action-setup@v6
         with:
-          node-version: lts/*
+          version: 10
+          cache: true
+
       - name: 下载依赖
-        run: npm install
+        run: pnpm install
+
       - name: 构建生产版本
-        run: npm run build -- --base '/${{ env.REPOSITORY_NAME }}/'
+        run: pnpm run build -- --base '/${{ env.REPOSITORY_NAME }}/'
+
       - name: 配置页面
         uses: actions/configure-pages@v4
+
       - name: 上传静态资产
         uses: actions/upload-pages-artifact@v3
         with:
           # 上传打包后的文件夹
           path: './dist'
+
       - name: 部署 GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

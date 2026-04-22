@@ -43,4 +43,4 @@ npm create nbc-app < projectName | 可选 >
     - React Compiler - React 性能编译器
     - Eslint - React Hooks 与 Refresh 静态代码检查
 
-![示例图](./public/snap/img.png)
+![示例图](./docs/snap/img.png)

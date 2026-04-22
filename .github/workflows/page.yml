@@ -30,7 +30,7 @@ jobs:
     steps:
       - name: 获取仓库名称并写入环境变量
         run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
-        
+
       - name: 检出代码
         uses: actions/checkout@v4
 
@@ -44,7 +44,7 @@ jobs:
         run: pnpm install
 
       - name: 构建生产版本
-        run: pnpm run build -- --base '/${{ env.REPOSITORY_NAME }}/'
+        run: pnpm build --base '/${{ env.REPOSITORY_NAME }}/'
 
       - name: 配置页面
         uses: actions/configure-pages@v4

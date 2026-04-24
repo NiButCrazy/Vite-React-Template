@@ -17,30 +17,30 @@
     ]
   },
   "dependencies": {
-    "@unocss/reset": "^66.6.7",
+    "@unocss/reset": "^66.6.8",
+    "clsx": "^2.1.1",
     "immer": "^11.1.4",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "react-router": "7.12.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-router": "^7.14.2",
     "use-immer": "^0.11.0",
-    "zustand": "^5.0.12",
-    "clsx": "^2.1.1"
+    "zustand": "^5.0.12"
   },
   "devDependencies": {
-    "@rolldown/plugin-babel": "^0.2.2",
-    "@types/node": "^24.12.0",
+    "@rolldown/plugin-babel": "^0.2.3",
+    "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "babel-plugin-react-compiler": "^1.0.0",
     "eslint": "^9.39.4",
-    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.4.0",
+    "globals": "^17.5.0",
     "less": "^4.6.4",
-    "typescript": "^6.0.0",
-    "typescript-eslint": "^8.57.2",
-    "unocss": "^66.6.7",
-    "vite": "8.0.5"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.0",
+    "unocss": "^66.6.8",
+    "vite": "^8.0.10"
   }
 }

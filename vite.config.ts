@@ -20,7 +20,6 @@ export default defineConfig({
       generateScopedName: '[local]-[hash:5]'
     }
   },
-
   resolve: {
     alias: {
       '@renderer': resolve(__dirname, './src'),

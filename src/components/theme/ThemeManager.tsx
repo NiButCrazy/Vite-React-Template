@@ -1,5 +1,5 @@
 import { useGlobalStore } from '@shared/stores/useGlobalStore'
-import { ComponentProps, useEffect, useEffectEvent } from 'react'
+import { useEffect, useEffectEvent } from 'react'
 import { clsx } from 'clsx'
 
 // 切换主题
@@ -14,7 +14,7 @@ function switchTheme(isDark: boolean) {
   }
 }
 
-export function ThemeManager(props: ComponentProps<'button'>) {
+export function ThemeManager() {
   const isDark = useGlobalStore(state => state.isDark)
   const setDark = useGlobalStore(state => state.setDark)
 
@@ -41,6 +41,6 @@ export function ThemeManager(props: ComponentProps<'button'>) {
   return (
     <button className={ clsx(
       'button1 pos-fixed top-30px right-30px bg-transparent'
-    ) } onClick={ handleClick } { ...props } >{ isDark ? '深色' : '浅色' }主题</button>
+    ) } onClick={ handleClick } >{ isDark ? '深色' : '浅色' }主题</button>
   )
 }

@@ -26,7 +26,7 @@ export default defineConfig({
       '@components': resolve(__dirname, './src/components'),
       '@utils': resolve(__dirname, './src/utils'),
       '@shared': resolve(__dirname, './src/shared'),
-      '@hooks': resolve(__dirname, './src/global')
+      '@hooks': resolve(__dirname, './src/hooks')
     }
   }
 })

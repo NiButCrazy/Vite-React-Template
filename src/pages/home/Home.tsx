@@ -2,7 +2,7 @@ import viteLogo from './assets/images/vite.svg'
 import reactLogo from './assets/images/react.svg'
 import heroImg from './assets/images/hero.png'
 import unocssLogo from './assets/images/unocss.svg'
-import routerImg from './assets/images/router.png'
+import routerImg from './assets/images/tanstack.ico'
 import zustandImg from './assets/images/zustand.ico'
 import immerImg from './assets/images/immer.ico'
 import Icons from './assets/images/icons.svg'
@@ -69,9 +69,9 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <a href="https://reactrouter.remix.org.cn/home" target="_blank">
+              <a href="https://tanstack.com/router/latest" target="_blank">
                 <img className="button-icon" src={ routerImg } alt="" />
-                React Router
+                TanStack Router
               </a>
             </li>
           </ul>

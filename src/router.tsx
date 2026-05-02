@@ -1,5 +1,5 @@
 import  { createRouter } from '@tanstack/react-router'
-import { routeTree } from '@renderer/routes/-routeTree.gen'
+import { routeTree } from '@renderer/routes/-routes.tree'
 
 // 获取到 vite 基础 base 路径，当然生产环境也能使用
 const basepath = import.meta.env.BASE_URL;

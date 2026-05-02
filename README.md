@@ -4,11 +4,15 @@
 
 ## 安装使用
 
+> [!TIP]
+> Tanstack Router 在 dev 服务器运行时再修改路由文件，可以享受到自动生成路由的爽感
+
 ```shell
 npm create nbc-app < projectName | 可选 >
 # yarn create nbc-app < projectName | 可选 >
 # pnpm create nbc-app < projectName | 可选 >
 ```
+
 
 > 当然也可以直接克隆项目  
 > 感兴趣的还可以查看个人 [汉化版 React DevTools](https://github.com/NiButCrazy/react-devtools-extension-chinese)
@@ -29,14 +33,14 @@ npm create nbc-app < projectName | 可选 >
 > vite 服务运行时，可直接在运行窗口中 `Ctrl + Shift + 鼠标左键` 点击服务器链接，
 > 这样是直接打开`断点调试的功能`，十分方便
 
-### 第三方库
+## 第三方库
 
 - #### 生产
-    - Zustand - 全局状态管理
     - Immer - 处理状态结构
+    - Zustand - 全局状态管理
     - clsx - 样式类名管理工具
-    - @unocss/reset - 统一浏览器之间的原生样式
     - @tanstack/react-router - 路由管理
+    - @unocss/reset - 统一浏览器之间的原生样式
 - #### 开发
     - Less - 样式预处理
     - UnoCSS - 原子化 CSS

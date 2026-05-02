@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [
     // tanstack router 自动生成器
     tanstackRouter({ target: 'react', autoCodeSplitting: true, 
-      generatedRouteTree: "src/routes/-routeTree.gen.ts" 
+      generatedRouteTree: "src/routes/-routes.tree.ts" 
     }),
     UnoCSS(),
     react(),

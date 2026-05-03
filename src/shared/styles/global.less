@@ -300,8 +300,11 @@ code {
 .TanStackRouterDevtools{
   color-scheme: dark;
   text-align: initial;
-  --code-bg: transparent;
-  --text-h: #66d4ff;
+
+  code {
+    background: transparent;
+    color: #66d4ff;
+  }
 
   & div::-webkit-scrollbar {
     display: none;

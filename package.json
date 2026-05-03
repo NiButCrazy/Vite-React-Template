@@ -1,9 +1,8 @@
 {
-  "name": "react-test",
-  "private": false,
+  "name": "react-template",
   "description": "a react-vite template",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Ni But Crazy",
   "scripts": {
     "dev": "vite",

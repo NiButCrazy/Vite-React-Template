@@ -17,12 +17,15 @@ dist-ssr
 !.vscode/extensions.json
 !.vscode/settings.json
 .DS_Store
+desktop.ini
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-desktop.ini
-.idea/vcs.xml
-.idea/workspace.xml
+.idea/*
+!.idea/jsonSchemas.xml
+!.idea/inspectionProfiles
+!.idea/runConfigurations
+!.idea/compiler.xml
